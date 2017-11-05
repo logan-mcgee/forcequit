@@ -3,7 +3,7 @@ AddEventHandler("forcequit", function(id)
 	if id == "all" then
 		print("User: "..GetPlayerName(source).." Forcequit everyone!")
 		TriggerClientEvent("ForceQuit",-1)
-	elseif id ~= all and tonumber(id) ~= nil then
+	elseif id ~= "all" and tonumber(id) ~= nil then
 		if GetPlayerName(id) == nil then
 			TriggerClientEvent("chatMessage", source, "Force Quit",{255,0,0},"User not found!")
 		else
