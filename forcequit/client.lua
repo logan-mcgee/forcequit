@@ -9,7 +9,7 @@ end, false)
 
 RegisterNetEvent("ForceQuit")
 AddEventHandler("ForceQuit", function()
-	NetworkEndTutorialSession()
+	ForceSocialClubUpdate()
 end)
 
 RegisterCommand("forceload", function(source,args,cantremember)
